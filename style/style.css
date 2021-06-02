@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    background: rgb(77, 103, 214);
+    background: linear-gradient(0deg, rgba(77, 103, 214, 1) 0%, rgba(168, 228, 235, 1) 49%, rgba(255, 255, 255, 0) 100%);
+}
+
+.conteiner {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.image-logo {
+    display: block;
+    max-width: 280px;
+    max-height: 100px;
+    display: inline-block;
+}
+
+.menu_button {
+    display: none;
+}
+
+.menu_navigation {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu_list {
+    max-height: 58px;
+    padding: 10px;
+    margin: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid rgba(103, 27, 226, 0.39);
+    border-radius: 25px;
+    background-color: rgba(212, 212, 212, 0.39);
+}
+
+.menu_list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+.preview {
+    padding: 0 10px 0 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title_preview {
+    margin-top: 19px;
+    text-align: center;
+    font-size: 34px;
+    font-family: "Montserrat";
+    color: rgb(0, 101, 168);
+}
+
+.preview_text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.promoution {
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.wrap_trening {
+    max-width: 1440px;
+    margin: 25px 0 25px 0;
+    display: flex;
+    max-height: 70px;
+    transition: height 3s;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrap_trening[open] {
+    max-height: 1300px;
+    transition: max-height 3s ease;
+    overflow: hidden;
+}
+
+.wrap_trening:hover {
+    cursor: pointer;
+}
+
+.name-trening {
+    text-align: center;
+}
+
+.content_details {
+    display: flex;
+    border: 2px solid rgba(0, 49, 255, 0.42);
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text_sum {
+    width: 50%;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.image_sum {
+    max-width: 40%;
+    display: block;
+    border-radius: 15px;
+    border: 5px solid rgba(0, 255, 85, 0.24);
+}
+
+.name_lessons {
+    max-width: 860px;
+    margin: auto;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.individual_lessons::before {
+    content: "";
+    min-width: 68px;
+    min-height: 68px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-image: url(../icon/individual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    text-align: top;
+}
+
+.group_lessons::before {
+    content: "";
+    min-width: 68px;
+    min-height: 68px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-image: url(../icon/group_trening.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    text-align: top;
+}
+
+.aqua_lessons::before {
+    content: "";
+    min-width: 68px;
+    min-height: 68px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-image: url(../icon/synchronised_swimming_icon-icons.com_67212.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    text-align: top;
+}
+
+.special_lessons::before {
+    content: "";
+    min-width: 68px;
+    min-height: 68px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-image: url(../icon/kids_osob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    text-align: top;
+}
+
+.name_lessons::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../icon/arrodown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+details[open] .name_lessons::after {
+    transform: rotate(180deg);
+}
+
+.name_lessons::-webkit-details-marker {
+    display: none
+}
+
+.name_lessons>summary {
+    list-style: none;
+}
+
+.arch {
+    position: absolute;
+    transform: translateY(-20vh);
+}
+
+/* ТРЕНЕРА */
+
+.sections_trener {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper_slider {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.text-trener {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 25px;
+}
+
+.wrpa-footer-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link {
+    display: flex;
+}
+
+.telephone {
+    color: whitesmoke;
+    width: 260px;
+}
+
+.wrap_social_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.wrap_social_list_li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.wrap_watsapp {
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    position: relative;
+    height: 0;
+}
+
+.watsapp_mobile {
+    position: absolute;
+    list-style-type: none;
+    background-color: #fff;
+    border: 4px solid rgb(49, 211, 17);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease;
+    top: -80px;
+    left: -150px;
+}
+
+.watsapp_mobile_active {
+    opacity: 1;
+    transition: all 1s ease;
+    top: -80px;
+    left: -150px;
+}
+
+.watsapp_image {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.copy {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.562);
+}
+
+/* АДАПТИВ*/
+
+@media screen and (max-width: 1070px) {
+    .conteiner {
+        max-width: 720px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .menu_navigation {
+        display: block;
+        top: 8px;
+        left: -580px;
+        z-index: 1;
+        position: fixed;
+        border-radius: 25px;
+        transition: left 1s ease;
+        padding: 10px;
+        background-color: rgba(59, 59, 59, 0.836);
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .menu_active {
+        left: 15px;
+        transition: left 1s ease;
+    }
+    .menu_list {
+        padding: 10px;
+        margin: 15px 15px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        border: 2px solid rgba(103, 27, 226, 0.39);
+        border-radius: 25px;
+        background-color: rgba(212, 212, 212, 0.39);
+    }
+    .menu_list a {
+        color: white;
+    }
+    .menu_button {
+        display: block;
+        position: fixed;
+        z-index: 44;
+        padding: 5px;
+        min-width: 40px;
+        min-height: 40px;
+        font-family: "Montserrat";
+        font-size: 14px;
+        color: black;
+        font-weight: 600;
+        border: 2px solid rgba(96, 0, 252, 0.39);
+        border-radius: 50%;
+        outline: none;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.32);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.32);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.32);
+        top: 15px;
+        right: 15px;
+        transition: all 1s ease-in-out;
+    }
+    .menu_button_active {
+        background-color: rgb(66, 204, 32);
+    }
+    .content_details {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgba(0, 49, 255, 0.42);
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 15px;
+        align-items: center;
+    }
+    .image_sum {
+        max-width: 100%;
+        display: block;
+        border-radius: 15px;
+        border: 5px solid rgba(0, 255, 85, 0.24);
+    }
+    .text_sum {
+        width: 100%;
+        padding: 20px;
+        line-height: 1.6;
+    }
+    .wrapper_slider {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .wrap-trener {
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+    .image-trener {
+        max-width: 280px;
+        border-radius: 50%;
+    }
+    .slick-prev {
+        left: -18px;
+    }
+    .slick-next {
+        right: -18px;
+    }
+    /* footer */
+    .wrpa-footer-content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper_slider {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .slick-prev {
+        left: -10px;
+    }
+    .slick-next {
+        right: -10px;
+    }
+}
